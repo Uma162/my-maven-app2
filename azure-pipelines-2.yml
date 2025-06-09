@@ -7,7 +7,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'my-maven-app2/pom.xml'  # Change this to 'foldername/pom.xml' if it's inside a subfolder
+    mavenPomFile: 'my-maven-app2/myapp/pom.xml'  # Change this to 'foldername/pom.xml' if it's inside a subfolder
     goals: 'clean install'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
